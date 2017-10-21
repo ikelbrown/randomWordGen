@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Random Word Generator</title>
+       
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <h2>Random Word (attempt #{{ request.session.tries }})</h2>
+                <h1>{{ request.session.word }}</h1>
+                <a href="/generate"><button>Random Number Generator</button></a>
+                <a href="/reset"><button>Reset</button></a>
+            </div><!-- end of content div -->
+        </div><!-- end of wrapper div -->
+    </body>
+</html>
